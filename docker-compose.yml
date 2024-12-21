@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  banco:
+    image: "postgres:latest"
+    container_name: "client_register"
+    restart: always
+    environment:
+      POSTGRES_USER:
+      POSTGRES_PASSWORD:
+      POSTGRES_DB: clientRegisterDB
+    ports:
+      - "5432:5432"
